@@ -1,0 +1,33 @@
+{
+	"version": 1,
+	"objects": [ {
+			"aliases": [ "NewsData" ],
+			"objclass": "SettingsNewsData",
+			"objdata": {
+				"NewsDataEntries": [ {
+						"Date": 1615722428,
+						"LocalizedData": {
+							"en": {
+								"Text": "MEIZN v0.3.9\n·西部第一到四关完成\n \n \n \n 此档案完成时间2021-03-14 19:47:08\n \n \n \n \n \n \n \n \n \n \n \n \nMEIZN v0.3.8\n·海盗星星关卡完成\n·二次整理任务分类\n·以及其他杂项...\n \n \n \n 此档案完成时间2021-03-11 12:26:55\n \n \n \n \n \n \n \n \n \n \n \n \nMEIZN v0.3.7\n·悲！罗马测试以失败告终\n·海盗主线已完成！\n \n \n \n 此档案完成时间2021-03-06 19:45:31\n \n \n \n \n \n \n \n \n \n \n \n \nMEIZN v0.3.6 精罗落泪\n·罗马普僵资源组增加测试\n \n \n \n 此档案完成时间2021-03-05 22:31:04\n \n \n \n \n \n \n \n \n \n \n \n \nMEIZN v0.3.5 最 速 传 说\n·弹簧豆发出了谴责\n \n \n \n 此档案完成时间2021-03-05 22:31:04\n \n \n \n \n \n \n \n \n \n \n \n \nMEIZN v0.3.4 更新日志请签收~\n·可恶的海盗们终于扩张了他们的甲板——第六关！ \n·内部有更多的未使用资源组，but nobody cares \n ·植物收藏薄已推出，目前仅有2个关卡！\n·重新整理任务分类\n·啊哈！悲伤的消息，樱桃指无法在此版本找到T_T\n \n \n \n 此档案完成时间2021-03-05 22:09:39",
+								"DownloadableBanner": ""
+							},
+							"es": {
+								"Text": "Not Supported T_T"
+							},
+							"de": {
+								"Text": "Not Supported T_T"
+							},
+							"fr": {
+								"Text": "Not Supported T_T"
+							},
+							"it": {
+								"Text": "Not Supported T_T"
+							},
+							"pt": {
+								"Text": "Not Supported T_T"
+							}
+						}
+					} ]
+			}
+		} ]
+}
