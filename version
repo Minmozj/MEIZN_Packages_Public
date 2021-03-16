@@ -1,0 +1,58 @@
+//注释表罢了
+{
+   "#comment" : "Embedded RSB Version",
+   "version" : 1,
+   "objects" : [
+      {
+         "objclass" : "PVZVersion",
+         "objdata" : {
+            "major" : 0,
+            "minor" : 0,
+            "content" : 0
+         }
+      },
+      {
+         "#test_comments" : {
+            "#commentator" : "min",
+            "###This is a unused json(maybe?) so I use it to place levelfile folder path" : 0,
+            "Hello_World" : 0,
+            "Test_and_Test" : 0,
+            "Crash" : false
+         },
+         "#comments" : {
+            "######### PLACE THE LEVELFILE OF STAR LEVELS ########" : 0,
+            "EgyptVasebreakerLevel" : [
+               "arcade/vasebreaker_egypt1",
+               "arcade/vasebreaker_egypt2",
+               "arcade/vasebreaker_egypt3"
+            ],
+            "EgyptLastStandLevel" : [ "egypt18", "egypt17", "egypt24" ],
+            "PirateCannonLevel" : [ "lod_101", "lod_102", "lod_103" ],
+            "PirateGraveSpawnLevel" : [ "lod_104", "lod_105", "lod_106" ],
+            "CowboyCorralLevel" : [ "lod_120", "lod_121", "lod_122" ],
+            "CowboySingleCartLevel" : [ "lod_123", "lod_124", "lod_125" ],
+            "FutureZombossTestLabLevel" : [
+               "ZOMBOSS_TEST_LAB/First",
+               "ZOMBOSS_TEST_LAB/A",
+               "ZOMBOSS_TEST_LAB/B",
+               "ZOMBOSS_TEST_LAB/C"
+            ],
+            "FutureSunBombsLevel" : [ "TBD" ],
+            "EgyptPirateCooperation" : [ "lod_110", "lod_111", "lod_112", "lod_113", "lod_114", "lod_115" ],
+            "QuestUnlockPlant" : [ "lod_001", "lod_002" ]
+         },
+         "#dangerroom_comments" : {
+            "######### PLACE THE DANGERROOM LEVELSFILES HERE ########" : 0,
+            "###Because Egypt Danger Room is a RandomLevelSet Level(Like Modern Bosses battle) , so I add this object" : 0,
+            "###Maybe more special dangerroom will be added in the new versions, so don't del this." : 0,
+            "EgyptDangerRoom" : [
+               "challenge_levels/epic_zscaling1_01",
+               "challenge_levels/epic_zscaling1_02"
+            ],
+            "PirateDangerRoom" : [],
+            "CowboyDangerRoom" : [],
+            "FutureDangerRoom" : []
+         }
+      }
+   ]
+}
