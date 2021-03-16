@@ -1,0 +1,1353 @@
+{
+   "#comment" : "Make new quest types here!",
+   "#comment": "for MEIZN",
+   "version" : 1,
+   "objects" : [
+      {
+         "objclass" : "QuestMgr",
+         "objdata" : {
+            "LimitingMgr" : "RTID(QuestLimitingMgr@Quests)",
+            "LevelsRequiredToUnlock" : 3,
+            "Quests" : [
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Tutorial",
+                     "QuestCategory" : "Tutorial",
+                     "UniqueID" : "TUTORIAL_UNLOCK_BLOOMERANG",
+                     "QuestName" : "[QUEST_EGYPT_LEVEL_3]",
+                     "Description" : "[QUEST_EGYPT_LEVEL_3_DESC]",
+                     "LevelName" : "egypt3",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "pinata",
+                              "SubType" : "egypt_tutorial_gameplay",
+                              "Amount" : 1
+                           }
+                        ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Egypt",
+                     "QuestCategory" : "Egypt",
+                     "UniqueID" : "EGYPT_4",
+                     "QuestName" : "[QUEST_EGYPT_LEVEL_4]",
+                     "Description" : "[QUEST_EGYPT_LEVEL_4_DESC]",
+                     "LevelName" : "egypt4",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "TUTORIAL_UNLOCK_BLOOMERANG" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Egypt",
+                     "QuestCategory" : "Egypt",
+                     "UniqueID" : "EGYPT_5",
+                     "QuestName" : "[QUEST_EGYPT_LEVEL_5]",
+                     "Description" : "[QUEST_EGYPT_LEVEL_5_DESC]",
+                     "LevelName" : "egypt5",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "EGYPT_4" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "EpicQuestData" : {
+                     "Slot" : "Epic",
+                     "QuestCategory" : "Epic",
+                     "UniqueID" : "EGYPT_VASEBREAKER",
+                     "QuestName" : "[QUEST_EGYPT_VASEBREAKER]",
+                     "Description" : "[QUEST_EGYPT_VASEBREAKER_DESC]",
+                     "UniqueIDList" : [ "VASEBREAKER_EGYPT_1", "VASEBREAKER_EGYPT_2", "VASEBREAKER_EGYPT_3" ],
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "unlock_plant",
+                              "SubType" : "twinsunflower",
+                              "Amount" : 1
+                           }
+                        ]
+                     },
+                     "Priority" : "Epic",
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "egypt5" ]
+                     }
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "VASEBREAKER_EGYPT_1",
+                     "QuestName" : "[QUEST_EGYPT_VASEBREAKER]",
+                     "Description" : "[QUEST_EGYPT_VASEBREAKER_DESC]",
+                     "LevelName" : "arcade/vasebreaker_egypt1",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "VASEBREAKER_EGYPT_2",
+                     "QuestName" : "[QUEST_EGYPT_VASEBREAKER]",
+                     "Description" : "[QUEST_EGYPT_VASEBREAKER_DESC]",
+                     "LevelName" : "arcade/vasebreaker_egypt2",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "VASEBREAKER_EGYPT_3",
+                     "QuestName" : "[QUEST_EGYPT_VASEBREAKER]",
+                     "Description" : "[QUEST_EGYPT_VASEBREAKER_DESC]",
+                     "LevelName" : "arcade/vasebreaker_egypt3",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Egypt",
+                     "QuestCategory" : "Egypt",
+                     "UniqueID" : "EGYPT_6",
+                     "QuestName" : "[QUEST_EGYPT_LEVEL_6]",
+                     "Description" : "[QUEST_EGYPT_LEVEL_6_DESC]",
+                     "LevelName" : "egypt6",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "EGYPT_5" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "EpicQuestData" : {
+                     "Slot" : "Epic",
+                     "QuestCategory" : "Epic",
+                     "UniqueID" : "EGYPT_LASTSTAND",
+                     "QuestName" : "[QUEST_EGYPT_LASTSTAND]",
+                     "Description" : "[QUEST_EGYPT_LASTSTAND_DESC]",
+                     "UniqueIDList" : [ "LASTSTAND_EGYPT_1", "LASTSTAND_EGYPT_2", "LASTSTAND_EGYPT_3" ],
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "unlock_plant",
+                              "SubType" : "snowpea",
+                              "Amount" : 1
+                           }
+                        ]
+                     },
+                     "Priority" : "Epic",
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "egypt7" ]
+                     }
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "LASTSTAND_EGYPT_1",
+                     "QuestName" : "[QUEST_EGYPT_LASTSTAND]",
+                     "Description" : "[QUEST_EGYPT_LASTSTAND_DESC]",
+                     "LevelName" : "egypt18",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "LASTSTAND_EGYPT_2",
+                     "QuestName" : "[QUEST_EGYPT_LASTSTAND]",
+                     "Description" : "[QUEST_EGYPT_LASTSTAND_DESC]",
+                     "LevelName" : "egypt17",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "LASTSTAND_EGYPT_3",
+                     "QuestName" : "[QUEST_EGYPT_LASTSTAND]",
+                     "Description" : "[QUEST_EGYPT_LASTSTAND_DESC]",
+                     "LevelName" : "egypt24",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Egypt",
+                     "QuestCategory" : "Egypt",
+                     "UniqueID" : "EGYPT_7",
+                     "QuestName" : "[QUEST_EGYPT_LEVEL_7]",
+                     "Description" : "[QUEST_EGYPT_LEVEL_7_DESC]",
+                     "LevelName" : "egypt7",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "EGYPT_6" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Egypt",
+                     "QuestCategory" : "Egypt",
+                     "UniqueID" : "EGYPT_8",
+                     "QuestName" : "[QUEST_EGYPT_LEVEL_8]",
+                     "Description" : "[QUEST_EGYPT_LEVEL_8_DESC]",
+                     "LevelName" : "egypt8",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "EGYPT_7" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Egypt",
+                     "QuestCategory" : "Egypt",
+                     "UniqueID" : "EGYPT_9",
+                     "QuestName" : "[QUEST_EGYPT_LEVEL_9]",
+                     "Description" : "[QUEST_EGYPT_LEVEL_9_DESC]",
+                     "LevelName" : "egypt9",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "EGYPT_8" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Egypt",
+                     "QuestCategory" : "Egypt",
+                     "UniqueID" : "EGYPT_10",
+                     "QuestName" : "[QUEST_EGYPT_LEVEL_10]",
+                     "Description" : "[QUEST_EGYPT_LEVEL_10_DESC]",
+                     "LevelName" : "egypt10",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "EGYPT_9" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Egypt",
+                     "QuestCategory" : "Egypt",
+                     "UniqueID" : "EGYPT_11",
+                     "QuestName" : "[QUEST_EGYPT_LEVEL_11]",
+                     "Description" : "[QUEST_EGYPT_LEVEL_11_DESC]",
+                     "LevelName" : "egypt11",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "gems",
+                              "SubType" : "",
+                              "Amount" : 10
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "EGYPT_10" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_1",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_1]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_1_DESC]",
+                     "LevelName" : "pirate1",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "EGYPT_11" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "PremiumPlant",
+                     "QuestCategory" : "DailyActivities",
+                     "UniqueID" : "UNLOCK_PLANT_1",
+                     "QuestName" : "[QUEST_PLANT_UNLOCKER_TITLE]",
+                     "Description" : "[QUEST_PLANT_UNLOCKER_DESC]",
+                     "LevelName" : "lod_001",
+                     "Priority" : "Primary",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "unlock_plant",
+                              "SubType" : "aloe",
+                              "Amount" : 1
+                           }
+                        ]
+                     }
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "PremiumPlant",
+                     "QuestCategory" : "DailyActivities",
+                     "UniqueID" : "UNLOCK_PLANT_2",
+                     "QuestName" : "[QUEST_PLANT_UNLOCKER_TITLE]",
+                     "Description" : "[QUEST_PLANT_UNLOCKER_DESC]",
+                     "LevelName" : "lod_002",
+                     "Priority" : "Primary",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "unlock_plant",
+                              "SubType" : "powerlily",
+                              "Amount" : 1
+                           }
+                        ]
+                     }
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_1",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_1]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_1_DESC]",
+                     "LevelName" : "pirate1",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "egypt11" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_2",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_2]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_2_DESC]",
+                     "LevelName" : "pirate2",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate1" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_3",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_3]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_3_DESC]",
+                     "LevelName" : "pirate3",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate2" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_4",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_4]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_4_DESC]",
+                     "LevelName" : "pirate4",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate3" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_5",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_5]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_5_DESC]",
+                     "LevelName" : "pirate5",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate4" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_6",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_6]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_6_DESC]",
+                     "LevelName" : "pirate6",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate5" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_7",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_7]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_7_DESC]",
+                     "LevelName" : "pirate7",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate6" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_8",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_8]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_8_DESC]",
+                     "LevelName" : "pirate8",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate7" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_9",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_9]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_9_DESC]",
+                     "LevelName" : "pirate9",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate8" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Pirate",
+                     "QuestCategory" : "Pirate",
+                     "UniqueID" : "PIRATE_10",
+                     "QuestName" : "[QUEST_PIRATE_LEVEL_10]",
+                     "Description" : "[QUEST_PIRATE_LEVEL_10_DESC]",
+                     "LevelName" : "pirate10",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "gems",
+                              "SubType" : "",
+                              "Amount" : 10
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate9" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "EpicQuestData" : {
+                     "Slot" : "Epic",
+                     "QuestCategory" : "Epic",
+                     "UniqueID" : "PIRATE_CANNON",
+                     "QuestName" : "[QUEST_PIRATE_CANNON]",
+                     "Description" : "[QUEST_PIRATE_CANNON_DESC]",
+                     "UniqueIDList" : [ "PIRATE_CANNON_1", "PIRATE_CANNON_2", "PIRATE_CANNON_3" ],
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "unlock_plant",
+                              "SubType" : "cherry_bomb",
+                              "Amount" : 1
+                           }
+                        ]
+                     },
+                     "Priority" : "Epic",
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate3" ]
+                     }
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "PIRATE_CANNON_1",
+                     "QuestName" : "[QUEST_PIRATE_CANNON]",
+                     "Description" : "[QUEST_PIRATE_CANNON_DESC]",
+                     "LevelName" : "lod_101",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "PIRATE_CANNON_2",
+                     "QuestName" : "[QUEST_PIRATE_CANNON]",
+                     "Description" : "[QUEST_PIRATE_CANNON_DESC]",
+                     "LevelName" : "lod_102",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "PIRATE_CANNON_3",
+                     "QuestName" : "[QUEST_PIRATE_CANNON]",
+                     "Description" : "[QUEST_PIRATE_CANNON_DESC]",
+                     "LevelName" : "lod_103",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "EpicQuestData" : {
+                     "Slot" : "Epic",
+                     "QuestCategory" : "Epic",
+                     "UniqueID" : "PIRATE_GRAVESPAWN",
+                     "QuestName" : "[QUEST_PIRATE_GRAVESPAWN]",
+                     "Description" : "[QUEST_PIRATE_GRAVESPAWN_DESC]",
+                     "UniqueIDList" : [ "PIRATE_GRAVESPAWN_1", "PIRATE_GRAVESPAWN_2", "PIRATE_GRAVESPAWN_3" ],
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "unlock_plant",
+                              "SubType" : "spikerock",
+                              "Amount" : 1
+                           }
+                        ]
+                     },
+                     "Priority" : "Epic",
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate7" ]
+                     }
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "PIRATE_GRAVESPAWN_1",
+                     "QuestName" : "[QUEST_PIRATE_GRAVESPAWN]",
+                     "Description" : "[QUEST_PIRATE_GRAVESPAWN_DESC]",
+                     "LevelName" : "lod_104",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "PIRATE_GRAVESPAWN_2",
+                     "QuestName" : "[QUEST_PIRATE_GRAVESPAWN]",
+                     "Description" : "[QUEST_PIRATE_GRAVESPAWN_DESC]",
+                     "LevelName" : "lod_105",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "PIRATE_GRAVESPAWN_3",
+                     "QuestName" : "[QUEST_PIRATE_GRAVESPAWN]",
+                     "Description" : "[QUEST_PIRATE_GRAVESPAWN_DESC]",
+                     "LevelName" : "lod_106",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "PremiumPlant",
+                     "QuestCategory" : "DailyActivities",
+                     "UniqueID" : "UNLOCK_PLANT_3",
+                     "QuestName" : "[QUEST_PLANT_UNLOCKER_TITLE]",
+                     "Description" : "[QUEST_PLANT_UNLOCKER_DESC]",
+                     "LevelName" : "lod_003",
+                     "Priority" : "Primary",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "unlock_plant",
+                              "SubType" : "chomper",
+                              "Amount" : 1
+                           }
+                        ]
+                     }
+                  }
+               },
+               {
+                  "EpicQuestData" : {
+                     "Slot" : "Epic",
+                     "QuestCategory" : "DailyActivities",
+                     "UniqueID" : "COOPERATION_LEVEL_1",
+                     "QuestName" : "[QUEST_EGYPT_PIRATE_COOPERATION]",
+                     "Description" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "UniqueIDList" : [
+                        "EP_COOPERATION_1",
+                        "EP_COOPERATION_2",
+                        "EP_COOPERATION_3",
+                        "EP_COOPERATION_4",
+                        "EP_COOPERATION_5",
+                        "EP_COOPERATION_6"
+                     ],
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "gems",
+                              "SubType" : "",
+                              "Amount" : 10
+                           }
+                        ]
+                     },
+                     "Priority" : "Epic",
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "pirate10" ]
+                     }
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "EP_COOPERATION_1",
+                     "QuestName" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "Description" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "LevelName" : "lod_110",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "EP_COOPERATION_2",
+                     "QuestName" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "Description" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "LevelName" : "lod_111",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "EP_COOPERATION_3",
+                     "QuestName" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "Description" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "LevelName" : "lod_112",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "EP_COOPERATION_4",
+                     "QuestName" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "Description" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "LevelName" : "lod_113",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "EP_COOPERATION_5",
+                     "QuestName" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "Description" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "LevelName" : "lod_114",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "EP_COOPERATION_6",
+                     "QuestName" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "Description" : "[QUEST_EGYPT_PIRATE_COOPERATION_DESC]",
+                     "LevelName" : "lod_115",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Cowboy",
+                     "QuestCategory" : "Cowboy",
+                     "UniqueID" : "COWBOY_1",
+                     "QuestName" : "[QUEST_COWBOY_LEVEL_1]",
+                     "Description" : "[QUEST_COWBOY_LEVEL_1_DESC]",
+                     "LevelName" : "cowboy1",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "PIRATE_10" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Cowboy",
+                     "QuestCategory" : "Cowboy",
+                     "UniqueID" : "COWBOY_2",
+                     "QuestName" : "[QUEST_COWBOY_LEVEL_2]",
+                     "Description" : "[QUEST_COWBOY_LEVEL_2_DESC]",
+                     "LevelName" : "cowboy2",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "COWBOY_1" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Cowboy",
+                     "QuestCategory" : "Cowboy",
+                     "UniqueID" : "COWBOY_3",
+                     "QuestName" : "[QUEST_COWBOY_LEVEL_3]",
+                     "Description" : "[QUEST_COWBOY_LEVEL_3_DESC]",
+                     "LevelName" : "cowboy3",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "COWBOY_2" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "LevelQuestData" : {
+                     "Slot" : "Cowboy",
+                     "QuestCategory" : "Cowboy",
+                     "UniqueID" : "COWBOY_4",
+                     "QuestName" : "[QUEST_COWBOY_LEVEL_4]",
+                     "Description" : "[QUEST_COWBOY_LEVEL_4_DESC]",
+                     "LevelName" : "cowboy4",
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "coins",
+                              "SubType" : "",
+                              "Amount" : 100
+                           }
+                        ]
+                     },
+                     "Prerequisites" : {
+                        "QuestUniqueIDs" : [ "COWBOY_3" ]
+                     },
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "EpicQuestData" : {
+                     "Slot" : "Epic",
+                     "QuestCategory" : "Epic",
+                     "UniqueID" : "COWBOY_CORRAL",
+                     "QuestName" : "[QUEST_COWBOY_CORRAL]",
+                     "Description" : "[QUEST_COWBOY_CORRAL_DESC]",
+                     "UniqueIDList" : [ "COWBOY_CORRAL_1", "COWBOY_CORRAL_2", "COWBOY_CORRAL_3" ],
+                     "CompletionAwards" : {
+                        "Awards" : [
+                           {
+                              "Type" : "unlock_plant",
+                              "SubType" : "melonpult",
+                              "Amount" : 1
+                           }
+                        ]
+                     },
+                     "Priority" : "Epic",
+                     "Prerequisites" : {
+                        "SpineLevelCompletions" : [ "cowboy3" ]
+                     }
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "COWBOY_CORRAL_1",
+                     "QuestName" : "[QUEST_COWBOY_CORRAL_DESC]",
+                     "Description" : "[QUEST_COWBOY_CORRAL_DESC]",
+                     "LevelName" : "lod_120",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "COWBOY_CORRAL_2",
+                     "QuestName" : "[QUEST_COWBOY_CORRAL_DESC]",
+                     "Description" : "[QUEST_COWBOY_CORRAL_DESC]",
+                     "LevelName" : "lod_121",
+                     "Priority" : "Primary"
+                  }
+               },
+               {
+                  "ChallengeLevelQuestData" : {
+                     "Slot" : "Unused",
+                     "QuestCategory" : "Unused",
+                     "UniqueID" : "COWBOY_CORRAL_3",
+                     "QuestName" : "[QUEST_COWBOY_CORRAL_DESC]",
+                     "Description" : "[QUEST_COWBOY_CORRAL_DESC]",
+                     "LevelName" : "lod_122",
+                     "Priority" : "Primary"
+                  }
+               }
+            ],
+            "SlotDisplayOrder" : [
+               "Tutorial",
+               "Egypt",
+               "Pirate",
+               "Scheduled",
+               "Epic",
+               "DailyPinataHunt",
+               "Currency",
+               "Egypt",
+               "Pirate",
+               "Cowboy",
+               "Future",
+               "IceAge",
+               "LostCity",
+               "Dark",
+               "Eighties",
+               "Beach",
+               "Dino",
+               "Modern",
+               "UnlockWorld",
+               "PremiumPlant",
+               "EgyptElder",
+               "PirateElder",
+               "CowboyElder",
+               "FutureElder",
+               "IceAgeElder",
+               "LostCityElder",
+               "DarkElder",
+               "EightiesElder",
+               "BeachElder",
+               "DinoElder",
+               "ModernElder",
+               "Generic"
+            ],
+            "SlotPickSortByDistance" : [
+               "Egypt",
+               "Pirate",
+               "Cowboy",
+               "Future",
+               "Dark",
+               "Beach",
+               "IceAge",
+               "LostCity",
+               "Eighties",
+               "Dino",
+               "Modern"
+            ],
+            "RecyclableSlots" : [
+               "EgyptElder",
+               "PirateElder",
+               "CowboyElder",
+               "FutureElder",
+               "IceAgeElder",
+               "LostCityElder",
+               "DarkElder",
+               "EightiesElder",
+               "BeachElder",
+               "DinoElder",
+               "ModernElder",
+               "Generic"
+            ],
+            "RecycleCountPerDay" : 3,
+            "SlotPickingGroups" : [
+               {
+                  "GroupID" : "Tutorial",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_GENERIC",
+                  "AvailableDuringTutorial" : true,
+                  "Slots" : [
+                     {
+                        "Slot" : "Tutorial"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "UnlockWorld",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_GENERIC",
+                  "AvailableDuringTutorial" : true,
+                  "Slots" : [
+                     {
+                        "Slot" : "UnlockWorld"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "Egypt",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_EGYPT",
+                  "AvailableDuringTutorial" : true,
+                  "Slots" : [
+                     {
+                        "Slot" : "Egypt"
+                     },
+                     {
+                        "Slot" : "EgyptElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "Pirate",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_PIRATE",
+                  "Slots" : [
+                     {
+                        "Slot" : "Pirate"
+                     },
+                     {
+                        "Slot" : "PirateElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "Cowboy",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_WEST",
+                  "Slots" : [
+                     {
+                        "Slot" : "Cowboy"
+                     },
+                     {
+                        "Slot" : "CowboyElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "Future",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_FUTURE",
+                  "Slots" : [
+                     {
+                        "Slot" : "Future"
+                     },
+                     {
+                        "Slot" : "FutureElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "Dark",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_DARKAGES",
+                  "Slots" : [
+                     {
+                        "Slot" : "Dark"
+                     },
+                     {
+                        "Slot" : "DarkElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "Beach",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_BEACH",
+                  "Slots" : [
+                     {
+                        "Slot" : "Beach"
+                     },
+                     {
+                        "Slot" : "BeachElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "IceAge",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_ICEAGE",
+                  "Slots" : [
+                     {
+                        "Slot" : "IceAge"
+                     },
+                     {
+                        "Slot" : "IceAgeElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "LostCity",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_LOST_CITY",
+                  "Slots" : [
+                     {
+                        "Slot" : "LostCity"
+                     },
+                     {
+                        "Slot" : "LostCityElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "Eighties",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_EIGHTIES",
+                  "Slots" : [
+                     {
+                        "Slot" : "Eighties"
+                     },
+                     {
+                        "Slot" : "EightiesElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "Dino",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_DINO",
+                  "Slots" : [
+                     {
+                        "Slot" : "Dino"
+                     },
+                     {
+                        "Slot" : "DinoElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "Modern",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_MODERN",
+                  "Slots" : [
+                     {
+                        "Slot" : "Modern"
+                     },
+                     {
+                        "Slot" : "ModernElder",
+                        "LimitingGroup" : "ElderPickingGroup"
+                     }
+                  ]
+               },
+               {
+                  "GroupID" : "Generic",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_GENERIC",
+                  "Slots" : [
+                     {
+                        "Slot" : "Generic",
+                        "LimitingGroup" : "GenericPickingGroup"
+                     }
+                  ],
+                  "MaxPicks" : 4,
+                  "MinPicks" : 1,
+                  "ReducePicksByVisibleQuests" : true
+               },
+               {
+                  "GroupID" : "Currency",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_GENERIC",
+                  "Slots" : [
+                     {
+                        "Slot" : "Currency",
+                        "LimitingGroup" : "CurrencyPickingGroup"
+                     }
+                  ],
+                  "MaxPicks" : 1,
+                  "MinPicks" : 1,
+                  "ReducePicksByVisibleQuests" : true
+               },
+               {
+                  "GroupID" : "PremiumPlant",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_PREMIUM_PLANT",
+                  "Slots" : [
+                     {
+                        "Slot" : "PremiumPlant",
+                        "LimitingGroup" : "PremiumPickingGroup"
+                     }
+                  ],
+                  "MaxPicks" : 1,
+                  "MinPicks" : 1
+               },
+               {
+                  "GroupID" : "Epic",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_EPIC",
+                  "Slots" : [
+                     {
+                        "Slot" : "Epic",
+                        "LimitingGroup" : "EpicPickingGroup"
+                     }
+                  ],
+                  "MaxPicks" : 9999,
+                  "MinPicks" : 1,
+                  "RequiredToggle" : "EnableEpicQuests"
+               },
+               {
+                  "GroupID" : "PinataHuntDaily",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_GENERIC",
+                  "Slots" : [
+                     {
+                        "Slot" : "DailyPinataHunt",
+                        "LimitingGroup" : "PinataHuntGroup"
+                     }
+                  ],
+                  "MaxPicks" : 1,
+                  "MinPicks" : 1,
+                  "RequiredToggle" : "EnablePinataHuntQuests"
+               },
+               {
+                  "GroupID" : "Scheduled",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_GENERIC",
+                  "Slots" : [
+                     {
+                        "Slot" : "Scheduled"
+                     }
+                  ],
+                  "RequiredToggle" : "EnableScheduledQuests"
+               },
+               {
+                  "GroupID" : "DailyActivities",
+                  "PanelImage" : "IMAGE_UI_EVENT_PANELS_GENERIC",
+                  "Slots" : [
+                     {
+                        "Slot" : "DailyActivities"
+                     }
+                  ],
+                  "RequiredToggle" : "EnableScheduledQuests"
+               }
+            ]
+         }
+      },
+      {
+         "aliases" : [ "QuestLimitingMgr" ],
+         "objclass" : "QuestLimitingMgr",
+         "objdata" : {
+            "SlotPickLimitingGroups" : [
+               {
+                  "ID" : "ElderPickingGroup",
+                  "NumToPickTotal" : 1,
+                  "NumberOfMinutesTillNextPick" : 1440
+               },
+               {
+                  "ID" : "GenericPickingGroup",
+                  "NumToPickTotal" : 1,
+                  "NumberOfMinutesTillNextPick" : 720
+               },
+               {
+                  "ID" : "PremiumPickingGroup",
+                  "NumToPickTotal" : 1,
+                  "NumberOfMinutesTillNextPick" : 720
+               },
+               {
+                  "ID" : "EpicPickingGroup",
+                  "NumToPickTotal" : 10,
+                  "NumberOfMinutesTillNextPick" : 0
+               },
+               {
+                  "ID" : "CurrencyPickingGroup",
+                  "NumToPickTotal" : 1,
+                  "NumberOfMinutesTillNextPick" : 10080
+               },
+               {
+                  "ID" : "PinataHuntGroup",
+                  "NumToPickTotal" : 1,
+                  "NumberOfMinutesTillNextPick" : 720,
+                  "ForceRepickAllQuests" : "true",
+                  "RetryImmediatelyIfNoPick" : "true"
+               }
+            ]
+         }
+      }
+   ]
+}
